@@ -3,7 +3,6 @@ import { IFormatterOptions } from '@cucumber/cucumber/lib/formatter';
 import * as messages from '@cucumber/messages';
 import { scenarioDurationMs } from '../durations';
 
-// ts-unused-exports:disable-next-line
 export default class ProfileJsonlFormatter extends SummaryFormatter {
   constructor(options: IFormatterOptions) {
     super(options);

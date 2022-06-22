@@ -11,7 +11,6 @@ export type FirstArg<T> = T extends (X: infer X) => void ? X : never;
  *
  * Cucumber requires it to be the export default
  */
-// ts-unused-exports:disable-next-line
 export default class ProgressAndProfileFormatter extends SummaryFormatter {
   constructor(options: IFormatterOptions) {
     super(options);

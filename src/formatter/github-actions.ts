@@ -4,7 +4,6 @@ import { ITestCaseAttempt } from '@cucumber/cucumber/lib/formatter/helpers/event
 import * as messages from '@cucumber/messages';
 import { FirstArg } from './progress-and-profile';
 
-// ts-unused-exports:disable-next-line
 export default class GithubFormatter extends SummaryFormatter {
   constructor(options: IFormatterOptions) {
     super(options);

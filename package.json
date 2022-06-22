@@ -28,7 +28,6 @@
     "eslint-plugin-prettier": "3.4.0",
     "execa": "5.0.0",
     "prettier": "2.0.5",
-    "ts-unused-exports": "^7.0.3",
     "typescript": "^3.8.3"
   },
   "dependencies": {
@@ -39,7 +38,7 @@
   "scripts": {
     "build": "npm run lint && tsc",
     "dist": "rm -rf dist && npm run build && npm run test && cp package*.json README.md LICENSE dist && rm dist/test.*",
-    "lint": "eslint . && ts-unused-exports tsconfig.json",
+    "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "pack": "npm run dist && cd dist && npm pack",
     "setup": "npm i  && npm i --no-save mongodb@2.2.27",
